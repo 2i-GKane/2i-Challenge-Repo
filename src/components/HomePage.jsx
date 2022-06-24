@@ -11,7 +11,7 @@ const HomePage = () => {
     const[searchStr, setSearchStr] = useState("");
     let matchingSubmissions = items;
   
-    const fetchCards = () => {
+    const fetchSubmissions = () => {
       if(searchStr !== "") {
         matchingSubmissions = [];
         items.map((item) => {
@@ -25,7 +25,26 @@ const HomePage = () => {
       }
     }
 
-    fetchCards();
+    fetchSubmissions();
+
+    const getCardMethod = () => {
+      if(matchingSubmissions.length <= 0){
+        return <h1 className="no-result">No submissions found!</h1>
+      } else {
+        return matchingSubmissions.map((item) => {
+          cardID++;
+
+          let title = item.title,
+          creator = item.creator,
+          mainTechnology = item["main-technology"],
+          thumnail = item.thumbnail,
+          projectLink = item['project-link'],
+          projectGH = item['project-gh'];
+
+          return <Card key={cardID} title={title} mainTechnology={mainTechnology} creator={creator} thumbnail={thumnail} projectLink={projectLink} projectGH={projectGH}/>
+        });
+      }
+    }
 
   
     let cardID = 0;
@@ -42,18 +61,7 @@ const HomePage = () => {
           </div>
           
           <div className="container">
-          {matchingSubmissions.map((item) => {
-            cardID++;
-
-            let title = item.title,
-            creator = item.creator,
-            mainTechnology = item["main-technology"],
-            thumnail = item.thumbnail,
-            projectLink = item['project-link'],
-            projectGH = item['project-gh'];
-
-            return <Card key={cardID} title={title} mainTechnology={mainTechnology} creator={creator} thumbnail={thumnail} projectLink={projectLink} projectGH={projectGH}/>
-          })}
+          {getCardMethod()}
         </div>
       </div>
     )

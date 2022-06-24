@@ -27,6 +27,10 @@ const EngineersPage = () => {
 
     fetchEngineers();
 
+    const getProjectCount = () => {
+      
+    }
+
     let cardID = 0;
     const getEngineerCards = () => {
       let cards = [];
