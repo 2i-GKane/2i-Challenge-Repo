@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/2i-Challenge-Repo/static/css/main.d382eed6.css",
+    "main.css": "/2i-Challenge-Repo/static/css/main.dcffe3f8.css",
     "main.js": "/2i-Challenge-Repo/static/js/main.966363be.js",
     "static/media/1.png": "/2i-Challenge-Repo/static/media/1.9faed802b174f4b7c005.png",
     "index.html": "/2i-Challenge-Repo/index.html",
-    "main.d382eed6.css.map": "/2i-Challenge-Repo/static/css/main.d382eed6.css.map",
+    "main.dcffe3f8.css.map": "/2i-Challenge-Repo/static/css/main.dcffe3f8.css.map",
     "main.966363be.js.map": "/2i-Challenge-Repo/static/js/main.966363be.js.map"
   },
   "entrypoints": [
-    "static/css/main.d382eed6.css",
+    "static/css/main.dcffe3f8.css",
     "static/js/main.966363be.js"
   ]
 }
