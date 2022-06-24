@@ -50,6 +50,8 @@ body {
 
 .card--thumbnail > img {
     width: 100%;
+    min-width: 500px;
+    height: 300px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -81,4 +83,10 @@ body {
     font-size: 3rem;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .card--thumbnail > img {
+        height: 200px;
+    }
+  }
 
