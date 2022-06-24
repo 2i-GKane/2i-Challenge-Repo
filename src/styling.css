@@ -18,7 +18,15 @@ body {
     text-align: center;
     color: white;
     margin: 2rem;
+}
+
+.page-title > h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-title > h2 {
+    font-size: 2rem;
 }
 
 .container {

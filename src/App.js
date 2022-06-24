@@ -9,7 +9,10 @@ function App() {
   let cardID = 0;
   return (
     <div>
-      <h1 className="page-title">2i Coding Challenge Submissions</h1>
+      <div className="page-title">
+        <h1>2i Coding Challenge Submissions</h1>
+        <h2>Maintained by: Gabriel & Craig</h2>
+      </div>
 
       <div className="container">
       {items.map((item) => {
