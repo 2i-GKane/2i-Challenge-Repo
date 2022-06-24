@@ -38,5 +38,29 @@
         "thumbnail": "./images/5.jpg",
         "project-gh": "https://github.com/",
         "project-link": "https://github.com/"
+    },
+    {
+        "title":"Minesweeper",
+        "creator": "Craig",
+        "main-technology": "React",
+        "thumbnail": "./images/6.png",
+        "project-gh": "https://github.com/CraigMcleod2i/dinecreeper",
+        "project-link": "https://craigmcleod2i.github.io/dinecreeper/"
+    },
+    {
+        "title":"Minesweeper",
+        "creator": "Gabriel",
+        "main-technology": "React",
+        "thumbnail": "./images/7.png",
+        "project-gh": "https://2i-gkane.github.io/Mine-Sweeper/",
+        "project-link": "https://2i-gkane.github.io/Mine-Sweeper/"
+    },
+    {
+        "title":"Minesweeper",
+        "creator": "Magic",
+        "main-technology": "JavaScript",
+        "thumbnail": "./images/8.png",
+        "project-gh": "https://github.com/maciejfec2i/Minesweeper/",
+        "project-link": "https://maciejfec2i.github.io/Minesweeper/"
     }
 ]
