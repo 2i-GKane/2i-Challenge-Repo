@@ -9,7 +9,7 @@ const Card = ({title, mainTechnology, creator, thumbnail, projectLink, projectGH
     return (
         <div className="card">
             <div className="card--thumbnail">
-                <img src={thumbnail} />
+                <img src={require(thumbnail + "")} />
             </div>
             <div className="card--body">
                 <h1>{title}</h1>
