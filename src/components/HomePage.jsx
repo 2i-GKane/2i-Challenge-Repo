@@ -10,20 +10,23 @@ import "../styling.css";
 const HomePage = () => {
     const[searchStr, setSearchStr] = useState("");
     let matchingSubmissions = items;
-
-    console.log("home page")
   
-    if(searchStr !== "") {
-      matchingSubmissions = [];
-      items.map((item) => {
-        let projectName = item.title.toLowerCase();
-        let projectCreator = item.creator.toLowerCase();
-  
-        let search = searchStr.toLowerCase();
-  
-        if(projectName.includes(search) || projectCreator.includes(search)) matchingSubmissions.push(item);
-      })
+    const fetchCards = () => {
+      if(searchStr !== "") {
+        matchingSubmissions = [];
+        items.map((item) => {
+          let projectName = item.title.toLowerCase();
+          let projectCreator = item.creator.toLowerCase();
+    
+          let search = searchStr.toLowerCase();
+    
+          if(projectName.includes(search) || projectCreator.includes(search)) matchingSubmissions.push(item);
+        })
+      }
     }
+
+    fetchCards();
+
   
     let cardID = 0;
     return (
@@ -35,7 +38,7 @@ const HomePage = () => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <button className="btn-engineers">Engineers</button>
+              <a href="./engineers" className="homepage-links"><button>Engineers</button></a>
           </div>
           
           <div className="container">

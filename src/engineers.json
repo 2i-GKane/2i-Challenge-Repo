@@ -1,7 +1,8 @@
 {
     "gabriel":{
+        "name": "Gabriel Kane",
         "role": "Contributor",
-        "profile-picture": "./images/engineers/gabriel.png",
+        "profile-picture": "./images/engineers/gabriel.jpg",
         "github": "https://github.com/2i-GKane",
         "linkedin": "https://uk.linkedin.com/in/gabriel-kane-543565227"
     }

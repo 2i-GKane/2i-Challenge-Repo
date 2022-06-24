@@ -13,6 +13,12 @@ body {
     place-items: center center;
 }
 
+.no-result {
+    color: white;
+    font-size: xx-large;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
 .page-title {
     text-align: center;
     color: white;
@@ -110,7 +116,6 @@ body {
 .card--links {
     display: flex;
     justify-content: center;
-    cursor: pointer;
     padding-bottom: 1.5rem;
 }
 
@@ -120,6 +125,7 @@ body {
     margin-right: 2rem;
     font-size: 3rem;
     color: white;
+    cursor: pointer;
 }
 
 .homepage-links {
@@ -131,6 +137,7 @@ body {
 
 .homepage-links > button {
     margin: 1.5rem;
+    margin-bottom: 3rem;
     background-color: #242e40;
     color: white;
     border-radius: 10px;
@@ -145,7 +152,69 @@ body {
     font-size: x-large;
 }
 
+.homepage-links > button:hover {
+    box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 1);
+  }
 
+a {
+    text-decoration: none; 
+}
+
+.eng-card {
+    background-color: #242e40;
+    box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+.eng-card:hover {
+    box-shadow: 5px 7px 12px 15px rgba(0, 0, 0, 1);
+  }
+
+.eng-card--thumbnail {
+    max-width: 250px;
+    max-height: 250px;
+    width: fit-content;
+}
+
+.eng-card--thumbnail > img {
+    width: 100%;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.eng-card--body {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+
+.eng-card--body > h1 {
+    margin-bottom: 1rem;
+}
+
+.eng-card--body > h2 {
+    margin-bottom: 0.25rem;
+}
+
+.eng-card--links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.eng-link--item {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
     .card--thumbnail > img {
