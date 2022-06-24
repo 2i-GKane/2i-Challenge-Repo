@@ -1,0 +1,42 @@
+[
+    {
+        "title":"Title1",
+        "creator": "Placeholder Creator",
+        "main-technology": "React",
+        "thumbnail": "/images/RandomItemPicker-Gabriel.PNG",
+        "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
+        "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
+    },
+    {
+        "title":"Title2",
+        "creator": "Placeholder Creator",
+        "main-technology": "React",
+        "thumbnail": "/images/RandomItemPicker-Gabriel.PNG",
+        "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
+        "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
+    },
+    {
+        "title":"Title3",
+        "creator": "Placeholder Creator",
+        "main-technology": "React",
+        "thumbnail": "/images/RandomItemPicker-Gabriel.PNG",
+        "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
+        "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
+    },
+    {
+        "title":"Title4",
+        "creator": "Placeholder Creator",
+        "main-technology": "React",
+        "thumbnail": "/images/RandomItemPicker-Gabriel.PNG",
+        "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
+        "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
+    },
+    {
+        "title":"Title5",
+        "creator": "Placeholder Creator",
+        "main-technology": "React",
+        "thumbnail": "/images/RandomItemPicker-Gabriel.PNG",
+        "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
+        "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
+    }
+]
