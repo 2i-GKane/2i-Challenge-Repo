@@ -1,5 +1,6 @@
 import React from "react";
-import engineers from "../engineers.json"
+import engineers from "../engineers.json";
+import items from "../config.json";
 
 import { useState, useEffect } from "react";
 
@@ -9,6 +10,7 @@ import EngineerCard from "./EngineerCard";
 
 const EngineersPage = () => {
     const[searchStr, setSearchStr] = useState("");
+    const projectMap = {};
 
     let matchingEngineers = engineers;
     const fetchEngineers = () => {
@@ -27,8 +29,24 @@ const EngineersPage = () => {
 
     fetchEngineers();
 
-    const getProjectCount = () => {
-      
+    const mapProjects = (engineerID) => {
+      let count = 0;
+      if(engineers[engineerID] !== undefined){
+        projectMap[engineerID] = {};
+        const engineerName = engineers[engineerID].name;
+
+        for(const itemIndex in items){
+          const submission = items[itemIndex];
+          const mapID = engineerID + "-" + submission.title.replaceAll(" ", "");
+          
+          if(submission.creator.replace('id:','') === engineerID){
+            projectMap[engineerID][mapID] = submission;
+            count++;
+          }
+        }
+      }
+
+      return count;
     }
 
     let cardID = 0;
@@ -47,7 +65,8 @@ const EngineersPage = () => {
         let cardElem = <EngineerCard
         key={cardID} 
         name={engineerName} 
-        role={role} 
+        role={role}
+        projectCount={mapProjects(engineer)} 
         profilePicture={profilePicture} 
         github={github} 
         linkedin={linkedin}/>

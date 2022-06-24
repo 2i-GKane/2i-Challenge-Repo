@@ -194,11 +194,11 @@ a {
 }
 
 .eng-card--body > h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .eng-card--body > h2 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .eng-card--links {
