@@ -1,5 +1,6 @@
 import React from "react";
 import items from "../config.json"
+import engineers from "../engineers.json"
 
 import { useState } from "react";
 
@@ -10,13 +11,24 @@ import "../styling.css";
 const HomePage = () => {
     const[searchStr, setSearchStr] = useState("");
     let matchingSubmissions = items;
+
+    const getCreatorFromID = (projectCreator) => {
+      let creator = projectCreator;
+      if(projectCreator.startsWith("id:")){
+        let creatorID = projectCreator.replace('id:','');
+
+        if(engineers[creatorID] !== undefined) creator = engineers[creatorID]['name'];
+      }
+
+      return creator;
+    }
   
     const fetchSubmissions = () => {
       if(searchStr !== "") {
         matchingSubmissions = [];
         items.map((item) => {
           let projectName = item.title.toLowerCase();
-          let projectCreator = item.creator.toLowerCase();
+          let projectCreator = getCreatorFromID(item.creator).toLowerCase();
     
           let search = searchStr.toLowerCase();
     
@@ -35,7 +47,7 @@ const HomePage = () => {
           cardID++;
 
           let title = item.title,
-          creator = item.creator,
+          creator = getCreatorFromID(item.creator),
           mainTechnology = item["main-technology"],
           thumnail = item.thumbnail,
           projectLink = item['project-link'],
