@@ -122,6 +122,31 @@ body {
     color: white;
 }
 
+.homepage-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homepage-links > button {
+    margin: 1.5rem;
+    background-color: #242e40;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     .card--thumbnail > img {
         height: 200px;

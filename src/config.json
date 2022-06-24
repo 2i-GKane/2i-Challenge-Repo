@@ -1,7 +1,7 @@
 [
     {
         "title":"Random Name Picker",
-        "creator": "Gabriel",
+        "creator": "id:gabriel",
         "main-technology": "React",
         "thumbnail": "./images/1.png",
         "project-gh": "https://github.com/2i-GKane/Random-Item-Picker",
@@ -49,7 +49,7 @@
     },
     {
         "title":"Minesweeper",
-        "creator": "Gabriel",
+        "creator": "id:gabriel",
         "main-technology": "React",
         "thumbnail": "./images/7.png",
         "project-gh": "https://2i-gkane.github.io/Mine-Sweeper/",
