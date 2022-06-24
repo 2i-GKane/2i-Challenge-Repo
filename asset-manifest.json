@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/2i-Challenge-Repo/static/css/main.d382eed6.css",
+    "main.js": "/2i-Challenge-Repo/static/js/main.4e51625b.js",
+    "index.html": "/2i-Challenge-Repo/index.html",
+    "main.d382eed6.css.map": "/2i-Challenge-Repo/static/css/main.d382eed6.css.map",
+    "main.4e51625b.js.map": "/2i-Challenge-Repo/static/js/main.4e51625b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d382eed6.css",
+    "static/js/main.4e51625b.js"
+  ]
+}
