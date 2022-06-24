@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/2i-Challenge-Repo/static/css/main.bac2fb49.css",
-    "main.js": "/2i-Challenge-Repo/static/js/main.50dbc0d6.js",
+    "main.css": "/2i-Challenge-Repo/static/css/main.b26be3c4.css",
+    "main.js": "/2i-Challenge-Repo/static/js/main.08cdcdf0.js",
     "static/media/2.png": "/2i-Challenge-Repo/static/media/2.af0335c02f2b211f9667.png",
     "static/media/3.png": "/2i-Challenge-Repo/static/media/3.972788d503e67d116917.png",
     "static/media/4.png": "/2i-Challenge-Repo/static/media/4.090904d2395f8e9a0082.png",
+    "static/media/6.png": "/2i-Challenge-Repo/static/media/6.0722434b78e5a7d8d748.png",
+    "static/media/8.png": "/2i-Challenge-Repo/static/media/8.8a411403b3d9dc3bf64e.png",
     "static/media/1.png": "/2i-Challenge-Repo/static/media/1.9faed802b174f4b7c005.png",
+    "static/media/7.png": "/2i-Challenge-Repo/static/media/7.4a2e4ab02d65d1779cec.png",
     "static/media/5.jpg": "/2i-Challenge-Repo/static/media/5.e74efc07a190393153ca.jpg",
     "index.html": "/2i-Challenge-Repo/index.html",
-    "main.bac2fb49.css.map": "/2i-Challenge-Repo/static/css/main.bac2fb49.css.map",
-    "main.50dbc0d6.js.map": "/2i-Challenge-Repo/static/js/main.50dbc0d6.js.map"
+    "main.b26be3c4.css.map": "/2i-Challenge-Repo/static/css/main.b26be3c4.css.map",
+    "main.08cdcdf0.js.map": "/2i-Challenge-Repo/static/js/main.08cdcdf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bac2fb49.css",
-    "static/js/main.50dbc0d6.js"
+    "static/css/main.b26be3c4.css",
+    "static/js/main.08cdcdf0.js"
   ]
 }
