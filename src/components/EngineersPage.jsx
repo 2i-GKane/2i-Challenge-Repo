@@ -2,14 +2,17 @@ import React from "react";
 import engineers from "../engineers.json";
 import items from "../config.json";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import SearchBar from "./SearchBar";
 import "../styling.css";
 import EngineerCard from "./EngineerCard";
+import EngineerProfilePage from "./EngineerProfilePage";
 
-const EngineersPage = () => {
+const EngineersPage = ({ engineerSetter }) => {
     const[searchStr, setSearchStr] = useState("");
+    const[selectedEngineer, setSelectedEngineer] = useState("");
+    const[displayingProfile, setDisplayingProfile] = useState(false);
     const projectMap = {};
 
     let matchingEngineers = engineers;
@@ -33,7 +36,6 @@ const EngineersPage = () => {
       let count = 0;
       if(engineers[engineerID] !== undefined){
         projectMap[engineerID] = {};
-        const engineerName = engineers[engineerID].name;
 
         for(const itemIndex in items){
           const submission = items[itemIndex];
@@ -49,13 +51,22 @@ const EngineersPage = () => {
       return count;
     }
 
-    let cardID = 0;
+    const enableProfileView = (engineer) => {
+      if(engineers[engineer] !== undefined){
+        setSelectedEngineer(engineer);
+        setDisplayingProfile(true);
+      }
+    }
+
+    const disableProfileView = () => {
+      setSelectedEngineer("");
+        setDisplayingProfile(false);
+    }
+
     const getEngineerCards = () => {
       let cards = [];
 
       for(const engineer in matchingEngineers){
-        cardID++;
-
         let engineerName = engineers[engineer].name;
         let role = engineers[engineer].role;
         let profilePicture = engineers[engineer]['profile-picture'];
@@ -63,7 +74,8 @@ const EngineersPage = () => {
         let linkedin = engineers[engineer].linkedin;
 
         let cardElem = <EngineerCard
-        key={cardID} 
+        onClick={() => {enableProfileView(engineer)}}
+        key={engineer} 
         name={engineerName} 
         role={role}
         projectCount={mapProjects(engineer)} 
@@ -79,7 +91,8 @@ const EngineersPage = () => {
       return cards;
     }
 
-    return (
+    if(!displayingProfile){
+      return (
         <div>
           <div className="page-title">
             <h1>2i Coding Challenge Submissions</h1>
@@ -88,7 +101,7 @@ const EngineersPage = () => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <a href="./" className="homepage-links"><button>Submissions</button></a>
+              <a href="../" className="homepage-links"><button>Submissions</button></a>
           </div>
 
           <div className="container">
@@ -96,6 +109,12 @@ const EngineersPage = () => {
         </div>
       </div>
     )
+
+    } else {
+      mapProjects(selectedEngineer);
+      return <EngineerProfilePage engineerID={selectedEngineer} engineerProjects={projectMap[selectedEngineer]} revertPage={() => disableProfileView()}/>
+    }
+    
 }
 
 export default EngineersPage;

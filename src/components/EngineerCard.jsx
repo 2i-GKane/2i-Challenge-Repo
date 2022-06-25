@@ -4,13 +4,12 @@ import "../styling.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const EngineerCard = ({ name, role, projectCount, profilePicture, github, linkedin}) => {
-    
+const EngineerCard = ({ name, role, projectCount, profilePicture, github, linkedin, onClick}) => {
     return (
         <div>
-            <div className="eng-card">
+            <div className="eng-card" onClick={onClick}>
                 <div className="eng-card--thumbnail">
-                    <img src={require(profilePicture + "")} />
+                    <img src={require(`./images/engineers/${profilePicture}`)} />
                 </div>
                 <div className="eng-card--body">
                   <h1>{name}</h1>

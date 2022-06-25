@@ -152,6 +152,23 @@ body {
     font-size: x-large;
 }
 
+.homepage-links > #revert-eng {
+    margin: 1rem;
+    background-color: #242e40;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.homepage-links > #revert-eng:hover,
 .homepage-links > button:hover {
     box-shadow: 3px 5px 7px 3px rgba(0, 0, 0, 1);
   }
@@ -161,6 +178,7 @@ a {
 }
 
 .eng-card {
+    cursor: pointer;
     background-color: #242e40;
     box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 1);
     border-radius: 10px;
@@ -216,9 +234,57 @@ a {
     cursor: pointer;
 }
 
+.profile {
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+    background-color: #242e40;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+}
+
+.profile > h1{
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+}
+
+.profile > #submissions {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-image > img{
+    border-radius: 23rem;
+    max-width: 20rem;
+}
+
+.project-stats {
+    margin-top: 2rem;
+}
+
+.project-stats > h2 {
+    font-size: 2rem;
+}
+
+.project-stats > h3 {
+    margin: 0.25rem;
+    font-size: 1.35rem;
+}
+
 @media only screen and (max-width: 600px) {
     .card--thumbnail > img {
         height: 200px;
     }
+
+    .profile-image > img{
+        max-width: 15rem;
+    }
     
   }
+  

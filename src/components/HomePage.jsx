@@ -69,7 +69,7 @@ const HomePage = () => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <a href="./engineers" className="homepage-links"><button>Engineers</button></a>
+              <a href="./engineers/" className="homepage-links"><button>Engineers</button></a>
           </div>
           
           <div className="container">
