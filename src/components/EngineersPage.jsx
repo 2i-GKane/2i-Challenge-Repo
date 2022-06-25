@@ -9,6 +9,7 @@ import "../styling.css";
 import EngineerCard from "./EngineerCard";
 import EngineerProfilePage from "./EngineerProfilePage";
 
+const baseURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split('/')[1];
 const EngineersPage = ({ engineerSetter }) => {
     const[searchStr, setSearchStr] = useState("");
     const[selectedEngineer, setSelectedEngineer] = useState("");
@@ -101,7 +102,7 @@ const EngineersPage = ({ engineerSetter }) => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <a href="../" className="homepage-links"><button>Submissions</button></a>
+              <a href={`${baseURL}/`} className="homepage-links"><button>Submissions</button></a>
           </div>
 
           <div className="container">
