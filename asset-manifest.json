@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2i-Challenge-Repo/static/css/main.6b8bd98a.css",
-    "main.js": "/2i-Challenge-Repo/static/js/main.7e9b5ecb.js",
+    "main.css": "/2i-Challenge-Repo/static/css/main.40feeeb0.css",
+    "main.js": "/2i-Challenge-Repo/static/js/main.39e6008d.js",
     "static/media/2.png": "/2i-Challenge-Repo/static/media/2.af0335c02f2b211f9667.png",
     "static/media/3.png": "/2i-Challenge-Repo/static/media/3.972788d503e67d116917.png",
     "static/media/4.png": "/2i-Challenge-Repo/static/media/4.090904d2395f8e9a0082.png",
@@ -12,11 +12,11 @@
     "static/media/7.png": "/2i-Challenge-Repo/static/media/7.4a2e4ab02d65d1779cec.png",
     "static/media/5.jpg": "/2i-Challenge-Repo/static/media/5.e74efc07a190393153ca.jpg",
     "index.html": "/2i-Challenge-Repo/index.html",
-    "main.6b8bd98a.css.map": "/2i-Challenge-Repo/static/css/main.6b8bd98a.css.map",
-    "main.7e9b5ecb.js.map": "/2i-Challenge-Repo/static/js/main.7e9b5ecb.js.map"
+    "main.40feeeb0.css.map": "/2i-Challenge-Repo/static/css/main.40feeeb0.css.map",
+    "main.39e6008d.js.map": "/2i-Challenge-Repo/static/js/main.39e6008d.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b8bd98a.css",
-    "static/js/main.7e9b5ecb.js"
+    "static/css/main.40feeeb0.css",
+    "static/js/main.39e6008d.js"
   ]
 }
