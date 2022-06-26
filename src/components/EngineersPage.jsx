@@ -10,7 +10,7 @@ import EngineerCard from "./EngineerCard";
 import EngineerProfilePage from "./EngineerProfilePage";
 
 const baseURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split('/')[1];
-const EngineersPage = ({ engineerSetter }) => {
+const EngineersPage = ({ pageSetter }) => {
     const[searchStr, setSearchStr] = useState("");
     const[selectedEngineer, setSelectedEngineer] = useState("");
     const[displayingProfile, setDisplayingProfile] = useState(false);
@@ -102,7 +102,7 @@ const EngineersPage = ({ engineerSetter }) => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <a href={`${baseURL}/`} className="homepage-links"><button>Submissions</button></a>
+              <a className="homepage-links"><button onClick={() => pageSetter("home")}>Submissions</button></a>
           </div>
 
           <div className="container">

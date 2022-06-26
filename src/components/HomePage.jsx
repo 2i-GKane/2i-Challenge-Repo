@@ -8,9 +8,7 @@ import SearchBar from "./SearchBar";
 import Card from "./Card";
 import "../styling.css";
 
-const baseURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split('/')[1];
-
-const HomePage = () => {
+const HomePage = ({ pageSetter }) => {
     const[searchStr, setSearchStr] = useState("");
     let matchingSubmissions = items;
 
@@ -40,8 +38,6 @@ const HomePage = () => {
     }
 
     fetchSubmissions();
-    
-    console.log("base: " + baseURL)
 
     const getCardMethod = () => {
       if(matchingSubmissions.length <= 0){
@@ -73,7 +69,7 @@ const HomePage = () => {
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
-              <a href={`${baseURL}/engineers`} className="homepage-links"><button>Engineers</button></a>
+              <a className="homepage-links"><button onClick={() => pageSetter("engineers")}>Engineers</button></a>
           </div>
           
           <div className="container">
