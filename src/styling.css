@@ -277,6 +277,17 @@ a {
     font-size: 1.35rem;
 }
 
+.ch-card {
+    background-color: #242e40;
+    box-shadow: 5px 7px 10px 5px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    padding:1rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
 @media only screen and (max-width: 600px) {
     .card--thumbnail > img {
         height: 200px;

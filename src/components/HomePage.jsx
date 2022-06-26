@@ -63,13 +63,14 @@ const HomePage = ({ pageSetter }) => {
     return (
         <div>
           <div className="page-title">
-            <h1>2i Coding Challenge Submissions</h1>
-            <h2>Maintained by: Gabriel & Craig</h2>
+            <h1>2i Coding Challenge Repository</h1>
+            <h2>Submissions</h2>
           </div>
 
           <SearchBar updateSearch={setSearchStr}/>
           <div className="homepage-links">
               <a className="homepage-links"><button onClick={() => pageSetter("engineers")}>Engineers</button></a>
+              <a className="homepage-links"><button onClick={() => pageSetter("challenges")}>Challenges</button></a>
           </div>
           
           <div className="container">
