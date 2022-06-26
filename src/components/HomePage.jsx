@@ -1,5 +1,5 @@
 import React from "react";
-import items from "../config.json"
+import items from "../submissions.json"
 import engineers from "../engineers.json"
 
 import { useState } from "react";

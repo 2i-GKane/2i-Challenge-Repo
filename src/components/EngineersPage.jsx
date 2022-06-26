@@ -1,6 +1,6 @@
 import React from "react";
 import engineers from "../engineers.json";
-import items from "../config.json";
+import items from "../submissions.json";
 
 import { useState } from "react";
 
