@@ -258,6 +258,8 @@ a {
 .profile-image > img{
     border-radius: 23rem;
     max-width: 20rem;
+    padding: 0.5rem;
+    background-color: #12161f;
 }
 
 .project-stats {
