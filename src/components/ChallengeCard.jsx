@@ -1,8 +1,8 @@
 import React from "react";
 
-const ChallengeCard = ({ startDate, endDate, title, challenger }) => {
+const ChallengeCard = ({ startDate, endDate, title, challenger, onClick }) => {
     return(
-        <div className="ch-card">
+        <div className="ch-card" onClick={onClick}>
             <div className="card--body">
                 <h1>{title}</h1>
                 <h2>Start: {startDate}</h2>

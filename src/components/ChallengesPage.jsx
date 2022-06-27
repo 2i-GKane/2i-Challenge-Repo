@@ -3,11 +3,14 @@ import { useState } from "react";
 import challenges from "../challenges.json";
 import engineers from '../engineers.json';
 import ChallengeCard from "./ChallengeCard";
+import ChallengePage from "./ChallengePage";
 
 import SearchBar from "./SearchBar";
 
 const ChallengesPage = ({ pageSetter }) => {
     const[searchStr, setSearchStr] = useState("");
+    const[selectedChallenge, setSelectedChallenge] = useState("");
+    const[displayingChallenge, setDisplayingChallenge] = useState(false);
 
     let matchingChallenges = challenges;
     const fetchChallenges = () => {
@@ -38,6 +41,18 @@ const ChallengesPage = ({ pageSetter }) => {
         return challenger;
       }
 
+    const disableChallengeView = () => {
+        setSelectedChallenge("")
+        setDisplayingChallenge(false);
+    }
+
+    const enableChallengeView = (challengeID) => {
+        if(challenges[challengeID] !== undefined){
+          setSelectedChallenge(challengeID);
+          setDisplayingChallenge(true);
+        }
+    }
+
     const getChallengeCards = () => {
         const cards = [];
 
@@ -50,6 +65,8 @@ const ChallengesPage = ({ pageSetter }) => {
             challenger = getChallengerFromID(challenge['challenger']);
 
             let cardElement = <ChallengeCard
+            key={challengeID}
+            onClick={() => enableChallengeView(challengeID)}
             startDate={startDate}
             endDate={endDate}
             title={title}
@@ -63,7 +80,9 @@ const ChallengesPage = ({ pageSetter }) => {
         return cards;
     }
 
-    return (
+    if(displayingChallenge){
+        return <ChallengePage revertPage={disableChallengeView} challengeID={selectedChallenge}/>
+    } else return (
         <div>
             <div className="page-title">
             <h1>2i Coding Challenge Repository</h1>
