@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2i-Challenge-Repo/static/css/main.7726a7a7.css",
+    "main.css": "/2i-Challenge-Repo/static/css/main.4c94006b.css",
     "main.js": "/2i-Challenge-Repo/static/js/main.bed25b71.js",
     "static/media/2.png": "/2i-Challenge-Repo/static/media/2.af0335c02f2b211f9667.png",
     "static/media/3.png": "/2i-Challenge-Repo/static/media/3.972788d503e67d116917.png",
@@ -12,11 +12,11 @@
     "static/media/7.png": "/2i-Challenge-Repo/static/media/7.4a2e4ab02d65d1779cec.png",
     "static/media/5.jpg": "/2i-Challenge-Repo/static/media/5.e74efc07a190393153ca.jpg",
     "index.html": "/2i-Challenge-Repo/index.html",
-    "main.7726a7a7.css.map": "/2i-Challenge-Repo/static/css/main.7726a7a7.css.map",
+    "main.4c94006b.css.map": "/2i-Challenge-Repo/static/css/main.4c94006b.css.map",
     "main.bed25b71.js.map": "/2i-Challenge-Repo/static/js/main.bed25b71.js.map"
   },
   "entrypoints": [
-    "static/css/main.7726a7a7.css",
+    "static/css/main.4c94006b.css",
     "static/js/main.bed25b71.js"
   ]
 }
