@@ -1,11 +1,11 @@
 {
-    "1": {
+    "random-name-picker": {
         "start-date": "27/05/2022",
         "end-date": "09/06/2022",
         "title": "Random Name Picker",
         "challenger": "Andrew"
     },
-    "2": {
+    "mine-sweeper": {
         "start-date": "10/06/2022",
         "end-date": "23/06/2022",
         "title": "Minesweeper",

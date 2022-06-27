@@ -1,6 +1,6 @@
 [
     {
-        "title":"Random Name Picker",
+        "title":"id:random-name-picker",
         "creator": "id:gabriel",
         "main-technology": "React",
         "thumbnail": "./images/1.png",
@@ -8,7 +8,7 @@
         "project-link": "https://2i-gkane.github.io/Random-Item-Picker/"
     },
     {
-        "title":"Random Name Picker",
+        "title":"id:random-name-picker",
         "creator": "Carla",
         "main-technology": "React",
         "thumbnail": "./images/2.png",
@@ -16,7 +16,7 @@
         "project-link": "https://carlachiodi-2i.github.io/CodingWeeklyTasks/Challenge6-Wheel/mk-wheel/index.html"
     },
     {
-        "title":"Random Name Picker",
+        "title":"id:random-name-picker",
         "creator": "Craig",
         "main-technology": "React",
         "thumbnail": "./images/3.png",
@@ -24,7 +24,7 @@
         "project-link": "https://crmcleod.github.io/wheelspin/"
     },
     {
-        "title":"Random Name Picker",
+        "title":"id:random-name-picker",
         "creator": "Liam",
         "main-technology": "Python (BAD)",
         "thumbnail": "./images/4.png",
@@ -32,7 +32,7 @@
         "project-link": "https://github.com/Liam2i/2iCodingChallenges/tree/main/6-NamePicker"
     },
     {
-        "title":"Random Name Picker",
+        "title":"id:random-name-picker",
         "creator": "Martin",
         "main-technology": "N/A",
         "thumbnail": "./images/5.jpg",
@@ -40,7 +40,7 @@
         "project-link": "https://github.com/"
     },
     {
-        "title":"Minesweeper",
+        "title":"id:mine-sweeper",
         "creator": "Craig",
         "main-technology": "React",
         "thumbnail": "./images/6.png",
@@ -48,7 +48,7 @@
         "project-link": "https://craigmcleod2i.github.io/dinecreeper/"
     },
     {
-        "title":"Minesweeper",
+        "title":"id:mine-sweeper",
         "creator": "id:gabriel",
         "main-technology": "React",
         "thumbnail": "./images/7.png",
@@ -56,7 +56,7 @@
         "project-link": "https://2i-gkane.github.io/Mine-Sweeper/"
     },
     {
-        "title":"Minesweeper",
+        "title":"id:mine-sweeper",
         "creator": "Magic",
         "main-technology": "JavaScript",
         "thumbnail": "./images/8.png",

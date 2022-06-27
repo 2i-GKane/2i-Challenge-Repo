@@ -3,7 +3,7 @@ import "../../styling.css";
 import engineers from "../../engineers.json";
 import ProfileImage from "./ProfileImage";
 
-import Card from "../Card";
+import Card from "../SubmissionCard";
 
 const EngineerProfile = ({ engineerID, favouriteTech, projects }) => {
     const engineer = engineers[engineerID];

@@ -1,11 +1,12 @@
 import React from "react";
 import items from "../submissions.json"
 import engineers from "../engineers.json"
+import challenges from "../challenges.json"
 
 import { useState } from "react";
 
 import SearchBar from "./SearchBar";
-import Card from "./Card";
+import Card from "./SubmissionCard";
 import "../styling.css";
 
 const HomePage = ({ pageSetter }) => {
@@ -21,6 +22,18 @@ const HomePage = ({ pageSetter }) => {
       }
 
       return creator;
+    }
+
+    const getTitleFromID = (projectTitle) => {
+      let title = projectTitle;
+
+      if(projectTitle.startsWith("id:")){
+        let challengeID = projectTitle.replace('id:','');
+        
+        if(challenges[challengeID] !== undefined) title = challenges[challengeID].title;
+      }
+
+      return title;
     }
   
     const fetchSubmissions = () => {
@@ -46,7 +59,7 @@ const HomePage = ({ pageSetter }) => {
         return matchingSubmissions.map((item) => {
           cardID++;
 
-          let title = item.title,
+          let title = getTitleFromID(item.title),
           creator = getCreatorFromID(item.creator),
           mainTechnology = item["main-technology"],
           thumnail = item.thumbnail,
