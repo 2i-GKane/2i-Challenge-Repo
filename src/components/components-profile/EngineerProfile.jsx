@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styling.css";
 import engineers from "../../engineers.json";
+import challenges from "../../challenges.json";
 import ProfileImage from "./ProfileImage";
 
 import Card from "../SubmissionCard";
@@ -11,6 +12,18 @@ const EngineerProfile = ({ engineerID, favouriteTech, projects }) => {
 
     const projectCount = Object.keys(projects).length;
 
+    const getProjTitleFromID = (projectTitle) => {
+        let title = projectTitle;
+  
+        if(projectTitle.startsWith("id:")){
+          let challengeID = projectTitle.replace('id:','');
+          
+          if(challenges[challengeID] !== undefined) title = challenges[challengeID].title;
+        }
+  
+        return title;
+      }
+
     let cardID = 0;
     const getProjectCards = () => {
         const projectCards = [];
@@ -18,7 +31,7 @@ const EngineerProfile = ({ engineerID, favouriteTech, projects }) => {
         for(const projectID in projects){
             cardID++;
             const project = projects[projectID];
-            const title = project.title,
+            const title = getProjTitleFromID[project.title],
             mainTechnology = project['main-technology'],
             thumbnail = project.thumbnail,
             projectLink = project['project-link'],
