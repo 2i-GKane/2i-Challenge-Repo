@@ -5,5 +5,12 @@
         "profile-picture": "gabriel.jpg",
         "github": "https://github.com/2i-GKane",
         "linkedin": "https://uk.linkedin.com/in/gabriel-kane-543565227"
+    },
+    "matthew-g":{
+        "name": "Matthew Gallagher",
+        "role": "Engineer",
+        "profile-picture": "matthew-g.jpg",
+        "github": "https://github.com/matthew-p-gallagher/",
+        "linkedin": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
     }
 }

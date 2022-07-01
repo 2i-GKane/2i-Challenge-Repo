@@ -29,7 +29,7 @@
         "main-technology": "Python (BAD)",
         "thumbnail": "./images/4.png",
         "project-gh": "https://github.com/Liam2i/2iCodingChallenges/tree/main/6-NamePicker",
-        "project-link": "https://github.com/Liam2i/2iCodingChallenges/tree/main/6-NamePicker"
+        "project-link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
     },
     {
         "title":"id:random-name-picker",
@@ -37,7 +37,7 @@
         "main-technology": "N/A",
         "thumbnail": "./images/5.jpg",
         "project-gh": "https://github.com/",
-        "project-link": "https://github.com/"
+        "project-link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
     },
     {
         "title":"id:mine-sweeper",
@@ -53,7 +53,7 @@
         "main-technology": "React",
         "thumbnail": "./images/7.png",
         "project-gh": "https://2i-gkane.github.io/Mine-Sweeper/",
-        "project-link": "https://2i-gkane.github.io/Mine-Sweeper/"
+        "project-link": "https://github.com/2i-GKane/Mine-Sweeper"
     },
     {
         "title":"id:mine-sweeper",
@@ -62,5 +62,13 @@
         "thumbnail": "./images/8.png",
         "project-gh": "https://github.com/maciejfec2i/Minesweeper/",
         "project-link": "https://maciejfec2i.github.io/Minesweeper/"
+    },
+    {
+        "title":"id:mine-sweeper",
+        "creator": "id:matthew-g",
+        "main-technology": "Python (BAD)",
+        "thumbnail": "./images/9.png",
+        "project-gh": "https://github.com/matthew-p-gallagher/Minecraft-sweeper",
+        "project-link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
     }
 ]
